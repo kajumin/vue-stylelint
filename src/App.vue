@@ -16,10 +16,10 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-     HelloWorld
+    HelloWorld
   },
-  created() {
-     console.log('created');
+  created () {
+    console.log('created')
   }
 }
 </script>
