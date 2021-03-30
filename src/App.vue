@@ -20,6 +20,7 @@ export default {
   },
   created () {
     console.log('created')
+    console.log('created two')
   }
 }
 </script>
