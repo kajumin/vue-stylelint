@@ -1,8 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+
+    <div>
+      <div>中国</div>
+      <span>广州增城</span>
+    </div>
+</div>
 </template>
 
 <script>
@@ -12,6 +17,9 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created () {
+      console.log('created');
   }
 }
 </script>
