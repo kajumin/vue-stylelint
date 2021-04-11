@@ -4,7 +4,14 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
 
     <div>
-      <div>中国1111</div>
+      <div
+        class="box1 box2 box3"
+        data-set="box1-set1"
+        data-name="box1-name"
+        data-type="box1-type"
+      >
+        中国1111
+      </div>
       <span>广州增城</span>
     </div>
     <ul>
@@ -14,6 +21,7 @@
       <li>4</li>
       <li>5</li>
     </ul>
+    <div><a href="#">按钮</a></div>
   </div>
 </template>
 <script>
@@ -44,19 +52,26 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 #app {
+  margin-top: 60px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.app {
-  color: red;
-}
-.app2 {
-  color: #096;
+
+  a {
+    color: #ffffff;
+    background-color: #ffffff;
+
+    &::after {
+      content: 'a';//伪元素
+    }
+  }
+
+  div {
+    box-sizing: border-box;
+  }
 }
 </style>
