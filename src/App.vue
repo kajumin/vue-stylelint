@@ -4,23 +4,39 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
 
     <div>
-      <div>中国</div>
+      <div>中国1111</div>
       <span>广州增城</span>
     </div>
-</div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
 </template>
-
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      msg: 'bang',
+      arr: [
+        {
+          id: 1,
+          name: 'bang'
+        }
+      ]
+    }
+  },
   components: {
     HelloWorld
   },
-  created () {
+  created() {
     console.log('created')
-    console.log('created two')
   }
 }
 </script>
@@ -33,5 +49,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.app {
+  color: red;
+}
+.app2 {
+  color: #096;
 }
 </style>
