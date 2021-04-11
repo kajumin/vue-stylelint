@@ -37,6 +37,8 @@ export default {
   },
   created() {
     console.log('created')
+    var str2 = '456'
+    console.log(str2)
     console.log('created2')
   }
 }
