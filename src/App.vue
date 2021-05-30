@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-
     <div>
       <div
         class="box1 box2 box3"
@@ -25,8 +23,6 @@
   </div>
 </template>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   data() {
@@ -40,38 +36,20 @@ export default {
       ]
     }
   },
-  components: {
-    HelloWorld
-  },
   created() {
     console.log('created')
     var str2 = '456'
     console.log(str2)
-    console.log('created2')
+    var arr = [1, 2, 3]
+    arr = arr.map(item => ({ id: item }))
+    console.log(arr)
   }
 }
 </script>
 
 <style scoped lang="scss">
-#app {
-  margin-top: 60px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  a {
-    color: #ffffff;
-    background-color: #ffffff;
-
-    &::after {
-      content: 'a';//伪元素
-    }
-  }
-
-  div {
-    box-sizing: border-box;
-  }
+.box1 {
+  color: #ffffff;
+  background-color: #009966;
 }
 </style>
