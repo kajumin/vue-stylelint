@@ -41,7 +41,7 @@ export default {
     var str2 = '456'
     console.log(str2)
     var arr = [1, 2, 3]
-    arr = arr.map(item => ({ id: item }))
+     arr = arr.map(item => ({ id: item }))
     console.log(arr)
   }
 }
